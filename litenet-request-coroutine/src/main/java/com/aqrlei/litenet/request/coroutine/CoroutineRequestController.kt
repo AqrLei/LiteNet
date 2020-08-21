@@ -1,11 +1,11 @@
-package com.aqrlei.litenet.controller
+package com.aqrlei.litenet.request.coroutine
 
-import com.aqrlei.utilcollection.ext.coroutineCancellableRun
 import com.aqrlei.litenet.IHttpCallback
 import com.aqrlei.litenet.IHttpRequestController
 import com.aqrlei.litenet.ITransformer
 import com.aqrlei.litenet.exception.CancelException
 import com.aqrlei.litenet.exception.HttpException
+import com.aqrlei.utilcollection.ext.coroutineCancellableRun
 import kotlinx.coroutines.Job
 import okhttp3.Call
 import java.lang.reflect.Type

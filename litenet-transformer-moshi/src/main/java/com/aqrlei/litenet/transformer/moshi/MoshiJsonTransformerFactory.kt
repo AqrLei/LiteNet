@@ -1,17 +1,16 @@
-package com.aqrlei.litenet.transformer.json.factory
+package com.aqrlei.litenet.transformer.moshi
 
 import com.aqrlei.litenet.ITransformer
 import com.aqrlei.litenet.ITransformerFactory
-import com.aqrlei.litenet.transformer.json.MoshiJsonTransformer
 
 /**
  * created by AqrLei on 2020/3/20
  */
-class DefaultJsonTransformerFactory private constructor() :
+class MoshiJsonTransformerFactory private constructor() :
     ITransformerFactory {
     companion object {
         fun create() =
-            DefaultJsonTransformerFactory()
+            MoshiJsonTransformerFactory()
     }
 
     override fun <T> createTransformer(): ITransformer<T> {

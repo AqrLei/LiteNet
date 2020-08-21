@@ -1,8 +1,9 @@
-package com.aqrlei.litenet.transformer
+package com.aqrlei.litenet.transformer.common
 
 import android.content.ContentResolver
 import android.net.Uri
 import com.aqrlei.litenet.IProgress
+import com.aqrlei.litenet.transformer.AbstractTransformer
 import okhttp3.ResponseBody
 import java.io.FileNotFoundException
 import java.io.FileOutputStream

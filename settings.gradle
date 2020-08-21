@@ -1,3 +1,6 @@
 include ':litenet'
+include ':litenet-transformer-moshi'
+include ':litenet-transformer-common'
+include ':litenet-request-coroutine'
 include ':app'
 rootProject.name = "LiteNet"

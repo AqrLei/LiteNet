@@ -1,6 +1,7 @@
-package com.aqrlei.litenet.transformer
+package com.aqrlei.litenet.transformer.common
 
 import com.aqrlei.litenet.IProgress
+import com.aqrlei.litenet.transformer.AbstractTransformer
 import okhttp3.ResponseBody
 import java.io.File
 import java.io.FileOutputStream

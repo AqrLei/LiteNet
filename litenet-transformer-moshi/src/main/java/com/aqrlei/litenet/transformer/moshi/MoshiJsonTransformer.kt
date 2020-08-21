@@ -1,6 +1,5 @@
-package com.aqrlei.litenet.transformer.json
+package com.aqrlei.litenet.transformer.moshi
 
-import com.aqrlei.litenet.jsonparser.MoshiJsonParser
 import com.aqrlei.litenet.transformer.AbstractTransformer
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

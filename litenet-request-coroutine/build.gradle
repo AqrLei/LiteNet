@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
+app.artifactId = "litenet-request-coroutine"
+
 android {
     compileSdkVersion app.compileSdkVersion
 
@@ -12,9 +14,6 @@ android {
         versionName app.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        buildConfigField "com.aqrlei.litelog.engine.ILogEngine", "logger",
-                "com.aqrlei.litelog.LogHelper.module(\"${project.name}\")"
 
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -34,10 +33,11 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation deps.kotlin.stdlib
+    implementation deps.kotlin.coroutine
     implementation deps.okhttp.okhttp
 
-    implementation deps.aqrlei.litelog
-
+    implementation deps.aqrlei.utilcollection
+    implementation deps.aqrlei.litenet
 }
 
 apply from: rootProject.file("gradle/bintray_upload.gradle")

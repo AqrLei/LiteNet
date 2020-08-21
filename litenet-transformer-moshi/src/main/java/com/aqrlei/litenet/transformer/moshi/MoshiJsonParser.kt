@@ -1,4 +1,4 @@
-package com.aqrlei.litenet.jsonparser
+package com.aqrlei.litenet.transformer.moshi
 
 import com.squareup.moshi.JsonReader
 import com.squareup.moshi.Moshi
