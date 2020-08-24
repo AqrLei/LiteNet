@@ -3,6 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+
+    // https://android-review.googlesource.com/c/platform/frameworks/support/+/1341853/17/ui/ui-tooling/build.gradle#66
+    packagingOptions {
+        exclude("META-INF/metadata.jvm.kotlin_module")
+        exclude("META-INF/metadata.kotlin_module")
+    }
+
     compileSdkVersion app.compileSdkVersion
 
     defaultConfig {
@@ -32,5 +39,15 @@ dependencies {
     testImplementation deps.junit
     androidTestImplementation deps.android.junit_ext
     androidTestImplementation deps.android.espresso
+
+    implementation deps.aqrlei.litenet
+    implementation deps.aqrlei.litenet_transformer_common
+    implementation deps.aqrlei.litenet_transformer_moshi
+    implementation deps.aqrlei.litenet_request_coroutine
+
+    implementation deps.aqrlei.utilcollection
+
+    implementation deps.okhttp.okhttp
+    implementation deps.okhttp.logging
 
 }
