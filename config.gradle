@@ -46,7 +46,7 @@ ext {
             litenet                   : "com.aqrlei.lib:litenet:1.0.2",
             litenet_transformer_common: "com.aqrlei.lib:litenet-transformer-common:1.0.2",
             litenet_transformer_moshi : "com.aqrlei.lib:litenet-transformer-moshi:1.0.2",
-            litenet_request_coroutine : "com.aqrlei.lib:litenet-request-coroutine:1.0.2",
+            litenet_request_coroutine : "com.aqrlei.lib:litenet-request-coroutine:1.0.3-alpha01",
             bannerview                : "com.aqrlei.lib:bannerview:1.0.1",
             utilcollection            : "com.aqrlei.lib:utilcollection:1.0.1",
             widgetcollection          : "com.aqrlei.lib:widgetcollection:1.0.1",

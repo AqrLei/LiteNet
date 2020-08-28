@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 app.artifactId = "litenet-request-coroutine"
+app.versionName = "1.0.3-alpha01"
 
 android {
     compileSdkVersion app.compileSdkVersion
