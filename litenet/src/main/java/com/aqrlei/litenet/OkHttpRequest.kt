@@ -1,7 +1,7 @@
 package com.aqrlei.litenet
 
 import android.net.Uri
-import com.aqrlei.litenet.BuildConfig.logger
+import android.util.Log
 import okhttp3.*
 import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -181,7 +181,7 @@ class OkHttpRequest private constructor(
 
         protected fun log(message: String) {
             if (IS_DEBUG) {
-                logger.d(tag, message)
+                Log.d(tag, message)
             }
         }
     }

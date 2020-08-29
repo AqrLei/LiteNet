@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 app.artifactId = "litenet-request-coroutine"
-app.versionName = "1.0.3-alpha01"
 
 android {
     compileSdkVersion app.compileSdkVersion
@@ -37,7 +36,6 @@ dependencies {
     implementation deps.kotlin.coroutine
     implementation deps.okhttp.okhttp
 
-    implementation deps.aqrlei.utilcollection
     implementation deps.aqrlei.litenet
 }
 

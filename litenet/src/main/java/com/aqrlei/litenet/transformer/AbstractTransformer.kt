@@ -1,6 +1,6 @@
 package com.aqrlei.litenet.transformer
 
-import com.aqrlei.litenet.BuildConfig.logger
+import android.util.Log
 import com.aqrlei.litenet.IS_DEBUG
 import com.aqrlei.litenet.ITransformer
 
@@ -13,7 +13,7 @@ abstract class AbstractTransformer<T> : ITransformer<T> {
 
     protected fun log(message:String){
         if (IS_DEBUG) {
-            logger.d(tag, message)
+            Log.d(tag, message)
         }
     }
 }

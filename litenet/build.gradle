@@ -13,9 +13,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "com.aqrlei.litelog.engine.ILogEngine", "logger",
-                "com.aqrlei.litelog.LogHelper.module(\"${project.name}\")"
-
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -35,8 +32,6 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation deps.kotlin.stdlib
     implementation deps.okhttp.okhttp
-
-    implementation deps.aqrlei.litelog
 
 }
 
