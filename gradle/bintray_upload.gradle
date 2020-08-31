@@ -36,6 +36,17 @@ Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 afterEvaluate {
+    
+    //发布前先执行 clean, 避免发布的 aar 中使用了旧的缓存代码
+    publish.dependsOn clean
+
+    publish.doFirst {
+        println("publish start, ${app.groupId}:${app.artifactId}:${app.versionName}")
+    }
+
+    publish.doLast {
+        println("publish end, ${app.groupId}:${app.artifactId}:${app.versionName}")
+    }
     publishing {
         publications {
             release(MavenPublication) {
